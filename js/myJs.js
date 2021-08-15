@@ -7,7 +7,7 @@ const textConfig = {
   text6: "Có! mlem mlem<3",
   text7: "Lý do sao em muốn làm vậy :))",
   text8: "Gửi<3",
-  text9: "Vi em rat la dam dang hehe                ",
+  text9: "Thích thì làm k thích thì làm                 ",
   text10: "Cho lên Úc ti di",
   text11: ":))",
   text12: "au mai gốt",
@@ -30,8 +30,6 @@ $(document).ready(function () {
   $("#yes").html(textConfig.text6);
 
   function firstQuestion() {
-    var audio = new Audio("./sound/sound.mp3");
-    audio.play();
     $(".content").hide();
     Swal.fire({
       title: textConfig.text1,
@@ -48,8 +46,10 @@ $(document).ready(function () {
 
   // switch button position
   function switchButton() {
-    var audio = new Audio("sound/duck.mp3");
-    audio.play();
+    var audioA = new Audio("sound/duck.mp3");
+    audioA.play();
+    var audioB = new Audio("sound/sound.mp3");
+    audioB.play();
     var leftNo = $("#no").css("left");
     var topNO = $("#no").css("top");
     var leftY = $("#yes").css("left");
