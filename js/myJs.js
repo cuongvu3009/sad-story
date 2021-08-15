@@ -30,6 +30,8 @@ $(document).ready(function () {
   $("#yes").html(textConfig.text6);
 
   function firstQuestion() {
+    var audio = new Audio("./sound/sound.mp3");
+    audio.play();
     $(".content").hide();
     Swal.fire({
       title: textConfig.text1,
