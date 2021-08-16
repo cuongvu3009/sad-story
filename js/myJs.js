@@ -54,8 +54,6 @@ $(document).ready(function () {
   function switchButton() {
     var audioA = new Audio("sound/duck.mp3");
     audioA.play();
-    var audioB = new Audio("sound/sound.mp3");
-    audioB.play();
     var leftNo = $("#no").css("left");
     var topNO = $("#no").css("top");
     var leftY = $("#yes").css("left");
