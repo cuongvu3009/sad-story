@@ -28,6 +28,11 @@ $(document).ready(function () {
   $("#text4").html(textConfig.text4);
   $("#no").html(textConfig.text5);
   $("#yes").html(textConfig.text6);
+  
+  const playSong = () => {
+    var audio = new Audio("sound/sound.mp3");
+    return audio.play();
+  };
 
   function firstQuestion() {
     $(".content").hide();
@@ -40,6 +45,7 @@ $(document).ready(function () {
       background: '#fff url("img/iput-bg.jpg")',
       imageAlt: "Custom image",
     }).then(function () {
+      playSong();
       $(".content").show(200);
     });
   }
